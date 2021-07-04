@@ -9,6 +9,9 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,

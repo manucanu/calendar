@@ -1,0 +1,23 @@
+.btn{
+    background-color: rgb(133, 231, 133);
+}
+.container-fluid.manou{
+
+    display: flex;
+    // justify-content: space-between;
+
+}
+
+.marge{
+    flex:2;
+    .manu{
+        margin-top: 20rem;
+    }
+}
+.right{
+    flex:9
+}
+.cont{
+    justify-content: space-between;
+    display: flex;
+}
