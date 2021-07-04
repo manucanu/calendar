@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-
+<app-landingpage></app-landingpage>
 
 <!-- <div class="row text-center" [ngSwitch]="view"> -->
 
@@ -9,13 +9,13 @@
 <!-- </div> -->
 
 <div class="container-fluid manou ">
-    <!-- <app-landingpage></app-landingpage> -->
+    
     <div class="marge">
         <h1>Calendar</h1>
-        <p>Calendars</p>
-        <p class="perso">Personal</p>
-        <p class="work">Work</p>
-        <p class="appointments">Appointments</p>
+        <p><i class="fa fa-circle" aria-hidden="true"></i>Calendars</p>
+        <p class="perso"><i class="fa fa-circle" aria-hidden="true"></i>Personal</p>
+        <p class="work"><i class="fa fa-circle" aria-hidden="true"></i>Work</p>
+        <p class="appointments"><i class="fa fa-circle" aria-hidden="true"></i>Appointments</p>
 
         <div class="manu"><i class="fa fa-cog" aria-hidden="true"></i> Settings</div>
     </div>
@@ -30,11 +30,11 @@
 
 
                     <div class="btn " mwlCalendarNextView [view]="view" [(viewDate)]="viewDate">
-                        Next
+                        Today
                     </div>
 
                     <div class="btn " mwlCalendarNextView [view]="view" [(viewDate)]="viewDate">
-                        Months
+                        Next
                     </div>
                 </div>
 
@@ -44,15 +44,15 @@
             </div>
             <div class="col-md-3">
                 <div class="btn-group">
-                    <div class="btn btn-primary" (click)="setView(calendarView.Month)"
+                    <div class="btn btn" (click)="setView(calendarView.Month)"
                         [class.active]="view === calendarView.Month">
                         Month
                     </div>
-                    <div class="btn btn-primary" (click)="setView(calendarView.Week)"
+                    <div class="btn btn" (click)="setView(calendarView.Week)"
                         [class.active]="view === calendarView.Week">
                         Week
                     </div>
-                    <div class="btn btn-primary" (click)="setView(calendarView.Day)"
+                    <div class="btn btn" (click)="setView(calendarView.Day)"
                         [class.active]="view === calendarView.Day">
                         Day
                     </div>
